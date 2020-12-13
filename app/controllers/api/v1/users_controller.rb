@@ -7,6 +7,7 @@ class Api::V1::UsersController < ApplicationController
 
     def create
         @user = User.new(user_params)
+        puts(@user)
         if @user.save
             UserNotifierMailer.send_signup_email(@user).deliver
         else

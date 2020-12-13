@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: da_api_production
-  username: ubuntu
+  username: da_api
   password: <%= ENV['DA_API_DATABASE_PASSWORD'] %>
