@@ -88,8 +88,8 @@ Rails.application.configure do
   #   :domain => 'heroku.com',
   #   :enable_starttls_auto => true
   # }
-  config.action_mailer.delivery_method = :smtp
-config.action_mailer.default_url_options ={:host => 'vast-retreat-18793.herokuapp.com', :protocol => 'https'}
+#   config.action_mailer.delivery_method = :smtp
+# config.action_mailer.default_url_options ={:host => 'vast-retreat-18793.herokuapp.com', :protocol => 'https'}
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
