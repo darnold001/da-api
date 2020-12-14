@@ -10,6 +10,7 @@ class Api::V1::UsersController < ApplicationController
         @user = User.new(user_params)
         if @user.save
             UserNotifierMailer.send_signup_email(@user).deliver
+            render json: @user
         else
             render error: { error: 'unable to create User.'}, status: 400
         end
